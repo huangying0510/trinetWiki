@@ -1,0 +1,24 @@
+
+main{
+	overflow: auto;
+}
+@media screen and (min-width: 769px) and (max-width: 870px){
+  	.app-nav{
+  		width: 335px;
+  	}
+    .markdown-section{
+  		padding-top: 40px ;
+  	}
+  }
+
+.app-nav li ul{
+  	z-index:1;
+}
+.hidden{
+ 	padding:0 5px;
+  	background-color: black;
+   	color: black !important;
+}
+.hidden:hover{
+   color:white !important;
+}

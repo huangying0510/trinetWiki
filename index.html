@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>トライネット社内Wiki(beta)</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+      window.$docsify = {
+      name: '<a href="#/version"><img src="images/tri_corp_logo.gif"></img></a>',
+      loadSidebar: true, // 增加：自动加载侧边栏
+      mergeNavbar: true, //小屏设备导航栏移动至目录
+      subMaxLevel: 4, // 生成目录的最大层级
+      loadNavbar: true, // 加载导航栏
+      auto2top: true, //切换页面后是否自动跳转到页面顶部
+      coverpage: true, // 开启封面
+      onlyCover: true,
+      homepage: 'home.md',
+      timeUpdater: {
+        text: "<div align='center' width='200px' style='color:gray;font-size:15px'>-------------- Updater :&emsp;{docsify-updated} --------------</div>",
+        formatUpdated: "{YYYY}/{MM}/{DD}",
+        whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+      },
+      // 搜索框的完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [], // or 'auto'
+        placeholder: '検索内容を入力してください',
+        noData: '検索結果が見つかりませんでした',
+        depth: 1,// 搜索标题的最大层级, 1 - 6
+        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+      },
+      pagination: {
+        previousText: '上一章节',
+        // or
+        nextText: {
+          '/': '下一章节'
+        },
+        crossChapter: true,
+        crossChapterText: true,
+      }
+    }
+  </script>
+  <script src="./js/jquery.js"></script>
+  <!-- Docsify v4 -->
+  <script src="./js/docsify@4.js"></script>
+  <!--搜索插件-->
+  <script src="./js/search.js"></script>
+  <!--分页插件-->
+  <script src="./js/docsify-pagination.js"></script>
+  <script src="./js/docsify-corner.js"></script>
+  <script src="./js/time-updater.js"></script>
+  <script src="./js/common.js"></script>
+</body>
+</html>
